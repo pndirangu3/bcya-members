@@ -42,7 +42,7 @@ public function show($id)
     'first_name' => 'required',
     'last_name' => 'required',
     'gender' => 'required',
-
+    'fingerprint_template' => 'required',
 	'date_of_birth' => [
         'required',
         'date',
@@ -96,6 +96,7 @@ $membershipNo = 'BCYA-' . date('Y') . '-' . str_pad($nextId, 5, '0', STR_PAD_LEF
 'clan' => $request->clan,
 'section' => $request->section,
        'photo' => $photoPath,
+       'fingerprint_template' => $request->fingerprint_template,
 	 'status' => 'Pending'
     ]);
 
