@@ -1,0 +1,1222 @@
+:root {
+    --primary: #00BFFF;
+    --primary-dark: #0099cc;
+    --accent: #D4AF37;
+}
+
+body {
+    background: #f5f6f8;
+}
+
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+.login-page {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6f8;
+    min-height: 100vh;
+}
+
+.login-page .page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.login-page .card {
+    width: 480px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: inset 10px 5px 13px 10px rgba(0, 0, 0, .04),
+        2px 4px 11px 8px rgba(0, 0, 0, .12);
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.login-page .logo {
+    display: block;
+    width: 120px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.login-page h1 {
+    font-size: 34px;
+    color: #00BFFF;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.login-page .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.login-page .form-group {
+    margin-bottom: 20px;
+}
+
+.login-page label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.login-page input[type="email"],
+.login-page input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #bdbdbd;
+    background: #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: all .25s ease;
+}
+
+.login-page input[type="email"]:hover,
+.login-page input[type="password"]:hover {
+    border-color: #999;
+}
+
+.login-page input[type="email"]:focus,
+.login-page input[type="password"]:focus {
+    outline: none;
+    border-color: #00BFFF;
+    box-shadow: 0 0 0 3px rgba(131, 53, 86, .15);
+}
+
+.login-page .btn-login {
+    width: 100%;
+    padding: 14px;
+    background: #00BFFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.login-page .btn-login:hover {
+    background: #0099cc;
+}
+
+.login-page .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.login-page .options label {
+    margin: 0;
+    font-weight: normal;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-page .options a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+.login-page .options a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 35px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+/* =====================================================
+   WELCOME PAGE
+===================================================== */
+
+.welcome-page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: #00BFFF;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+}
+
+.brand {
+    font-size: 34px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 12px 24px;
+    border: 1px solid rgba(255, 255, 255, .45);
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    background: #fff;
+    color: #00BFFF;
+}
+
+.welcome-page .hero {
+    width: 1200px;
+    max-width: 95%;
+    margin: 55px auto;
+    background: #fff;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .12);
+}
+
+.welcome-page .left {
+    width: 60%;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-page .left-content {
+    max-width: 520px;
+}
+
+.welcome-page h1 {
+    color: #00BFFF;
+    font-size: 54px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.welcome-page .motto {
+    color: #D4AF37;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.welcome-page .description {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.9;
+}
+
+.welcome-page .buttons {
+    margin-top: 45px;
+}
+
+.welcome-page .btn {
+    display: inline-block;
+    padding: 16px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s;
+    margin-right: 18px;
+}
+
+.welcome-page .primary {
+    background: #00BFFF;
+    color: #fff;
+}
+
+.welcome-page .primary:hover {
+    background: #0099cc;
+}
+
+.welcome-page .secondary {
+    border: 2px solid #00BFFF;
+    color: #00BFFF;
+    background: #fff;
+}
+
+.welcome-page .secondary:hover {
+    background: #00BFFF;
+    color: #fff;
+}
+
+.welcome-page .right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.welcome-page .right::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .05);
+}
+
+.welcome-page .logo-card {
+    position: relative;
+    background: #fff;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+}
+
+.welcome-page .logo-card img {
+    width: 360px;
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin: 35px;
+    color: #666;
+    font-size: 15px;
+}
+
+@media (max-width:950px) {
+
+    .welcome-page .hero {
+        flex-direction: column;
+    }
+
+    .welcome-page .left,
+    .welcome-page .right {
+        width: 100%;
+    }
+
+    .welcome-page .left {
+        padding: 40px;
+    }
+
+    .welcome-page .right {
+        padding: 50px;
+    }
+
+    .welcome-page h1 {
+        font-size: 40px;
+    }
+
+    .welcome-page .description {
+        font-size: 18px;
+    }
+
+    .welcome-page .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-page .btn {
+        margin-bottom: 15px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+/* =====================================================
+   REGISTRATION PAGE
+===================================================== */
+
+.register-page {
+    width: 100%;
+    padding: 30px;
+}
+
+.register-page .form-container {
+    background: #fff;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 12px;
+    border-top: 6px solid #00BFFF;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .10),
+        0 2px 4px -1px rgba(0, 0, 0, .06);
+}
+
+.register-page h1 {
+    color: #1e293b;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.register-page .error-banner {
+    background: #fef2f2;
+    border-left: 4px solid #ef4444;
+    padding: 16px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+.register-page .error-banner ul {
+    list-style: none;
+    color: #b91c1c;
+    font-size: 14px;
+}
+
+.register-page .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.register-page .full-width {
+    grid-column: span 2;
+}
+
+.register-page .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-page label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.register-page input[type="text"],
+.register-page input[type="email"],
+.register-page input[type="date"],
+.register-page select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #fff;
+    color: #334155;
+    transition: .2s;
+}
+
+.register-page input:focus,
+.register-page select:focus {
+    outline: none;
+    border-color: #00BFFF;
+    box-shadow: 0 0 0 3px rgba(131, 53, 86, .15);
+}
+
+.register-page input[type="file"] {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.register-page input[type="file"]::file-selector-button {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.register-page input[type="file"]::file-selector-button:hover {
+    background: #e2e8f0;
+}
+
+.register-page #captureBtn,
+.register-page .btn-submit {
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.register-page #captureBtn {
+    background: #475569;
+    color: #fff;
+    padding: 12px;
+}
+
+.register-page #captureBtn:hover {
+    background: #334155;
+}
+
+.register-page .btn-submit {
+    grid-column: span 2;
+    background: #00BFFF;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.register-page .btn-submit:hover {
+    background: #0099cc;
+}
+
+.register-page #fingerprintStatus {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00BFFF;
+}
+
+@media (max-width:600px) {
+
+    .register-page .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .register-page .full-width,
+    .register-page .btn-submit {
+        grid-column: span 1;
+    }
+
+    .register-page .form-container {
+        padding: 24px 16px;
+    }
+
+}
+
+/* =====================================================
+   MEMBERS LIST PAGE
+===================================================== */
+
+.members-page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8fafc;
+    color: #334155;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.members-page .table-container {
+    background: #ffffff;
+    max-width: 1400px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    border-radius: 12px;
+    border-top: 6px solid #00BFFF;
+
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .10),
+        0 2px 4px -1px rgba(0, 0, 0, .06);
+}
+
+.members-page h1 {
+    color: #1e293b;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.members-page .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, .02);
+}
+
+.members-page table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.members-page th {
+
+    background: #f1f5f9;
+
+    color: #334155;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+
+    padding: 16px 18px;
+
+    border-bottom: 2px solid #cbd5e1;
+
+    white-space: nowrap;
+
+}
+
+.members-page td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.members-page tr:last-child td {
+    border-bottom: none;
+}
+
+.members-page tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.members-page tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.members-page .avatar-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5f9;
+    border: 2px solid #e2e8f0;
+}
+
+.members-page .avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.members-page .avatar-placeholder {
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+.members-page .badge-status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(131, 53, 86, .10);
+    color: #00BFFF;
+    border: 1px solid rgba(131, 53, 86, .20);
+}
+
+.members-page .member-id {
+    font-weight: 600;
+    color: #64748b;
+}
+
+.members-page .membership-no {
+    font-weight: 500;
+}
+
+@media (max-width:640px) {
+
+    .members-page {
+        padding: 16px;
+    }
+
+    .members-page .table-container {
+        padding: 16px;
+    }
+
+}
+
+.members-page .clickable-row {
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.members-page .clickable-row:hover {
+    background: #f3f4f6;
+}
+
+
+/* =====================================================
+   MEMBER PROFILE PAGE
+===================================================== */
+
+.member-profile-page {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+.member-profile-page .card {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+
+.member-profile-page .header {
+    background: #00BFFF;
+    color: #fff;
+    padding: 20px;
+}
+
+.member-profile-page .header h1 {
+    margin: 0;
+    color: #fff;
+    text-align: left;
+    font-size: 32px;
+}
+
+.member-profile-page .membership-no {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.member-profile-page .content {
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+}
+
+.member-profile-page .photo-section {
+    width: 250px;
+    text-align: center;
+}
+
+.member-profile-page .photo-section img {
+    width: 220px;
+    border-radius: 10px;
+    border: 4px solid #00BFFF;
+}
+
+.member-profile-page .status {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.member-profile-page .details {
+    flex: 1;
+}
+
+.member-profile-page .details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.member-profile-page .details td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.member-profile-page .label {
+    width: 220px;
+    font-weight: bold;
+    color: #00BFFF;
+}
+
+.member-profile-page .buttons {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.member-profile-page .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-right: 10px;
+    text-decoration: none;
+    background: #00BFFF;
+    color: #fff;
+    border-radius: 5px;
+    transition: .25s;
+}
+
+.member-profile-page .btn:hover {
+    background: #0099cc;
+}
+
+@media(max-width:900px) {
+
+    .member-profile-page .content {
+        flex-direction: column;
+    }
+
+    .member-profile-page .photo-section {
+        width: 100%;
+    }
+
+}
+
+/* ===================================================
+   ADMIN LAYOUT
+=================================================== */
+
+.admin-page {
+    min-height: 100vh;
+    background: #f4f6f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-header {
+    height: 70px;
+    background: #00BFFF;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+
+.admin-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.admin-logo h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.admin-logo small {
+    display: block;
+    margin-top: 3px;
+    opacity: .85;
+    font-size: 13px;
+}
+
+.admin-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.logout-btn {
+    background: #fff;
+    color: #00BFFF;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: #f1f1f1;
+}
+
+.admin-body {
+    display: flex;
+    min-height: calc(100vh - 70px);
+}
+
+.admin-sidebar {
+    width: 250px;
+    background: #2f3542;
+    padding: 25px 0;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, .08);
+}
+
+.admin-sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    color: #dfe4ea;
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    transition: .25s;
+
+    font-size: 15px;
+
+    border-left: 4px solid transparent;
+}
+
+.admin-sidebar a:hover {
+    background: #3d4453;
+    color: #fff;
+}
+
+.admin-sidebar a.active {
+    background: #00BFFF;
+    color: #fff;
+    border-left-color: #D4AF37;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 35px;
+}
+
+/* ===================================================
+   DASHBOARD
+=================================================== */
+
+.dashboard-title {
+    font-size: 32px;
+    color: #2f3542;
+    margin-bottom: 8px;
+}
+
+.dashboard-subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+    border-top: 5px solid #00BFFF;
+    transition: .25s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+}
+
+.stat-number {
+    font-size: 42px;
+    font-weight: bold;
+    color: #00BFFF;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 16px;
+}
+
+
+.table-actions {
+    margin-bottom: 20px;
+}
+
+.table-actions form {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+}
+
+.table-actions input,
+.table-actions select {
+
+    height: 42px;
+    padding: 0 12px;
+
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+
+    background: #fff;
+
+}
+
+.table-actions input[name="search"] {
+
+    width: 240px;
+
+}
+
+.table-actions input[type="date"] {
+
+    width: 150px;
+
+}
+
+.table-actions select {
+
+    width: 130px;
+
+}
+
+.table-actions button,
+.table-actions .btn-reset {
+
+    height: 42px;
+    padding: 0 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    cursor: pointer;
+
+}
+
+/* Apply button */
+.table-actions button {
+
+    background: var(--primary);
+    color: #fff;
+
+}
+
+.table-actions button:hover {
+
+    background: var(--primary-dark);
+
+}
+
+/* Reset button */
+.table-actions .btn-reset {
+
+    background: #64748B;
+    color: #fff;
+
+}
+
+.table-actions .btn-reset:hover {
+
+    background: #475569;
+
+}
+
+/* ========================================
+   PAGINATION
+======================================== */
+
+.members-pagination {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+.pagination-info {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+}
+
+.pagination {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+.pagination svg {
+
+    width: 18px;
+
+    height: 18px;
+
+}
+
+.pagination a,
+.pagination span {
+
+    min-width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--border);
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    background: #fff;
+
+    font-weight: 500;
+
+}
+
+.pagination a:hover {
+
+    background: var(--primary);
+
+    color: #fff;
+
+    border-color: var(--primary);
+
+}
+
+.pagination .active span {
+
+    background: var(--primary);
+
+    color: #fff;
+
+    border-color: var(--primary);
+
+}
+
+.pagination .disabled span {
+
+    color: #94a3b8;
+
+    background: #f8fafc;
+
+}
+
+/* ==========================================
+   MEMBERS TOOLBAR
+========================================== */
+
+.members-toolbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+.members-toolbar-left {
+
+    font-size: 18px;
+
+    color: var(--text);
+
+}
+
+.members-toolbar-right form {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.members-toolbar-right label,
+.members-toolbar-right span {
+
+    color: var(--muted);
+    font-weight: 600;
+
+}
+
+.members-toolbar-right select {
+
+    width: 80px;
+    height: 42px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0 10px;
+
+}
+
+.members-page th a {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    color: #334155;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    width: 100%;
+
+}
+
+.members-page th a:hover {
+
+    color: var(--primary);
+
+}
+
+.members-page th a {
+
+    font-size: 13px;
+
+}
+
+.members-page th a::after {
+
+    font-size: 11px;
+
+}
